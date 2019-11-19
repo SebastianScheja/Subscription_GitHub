@@ -13,6 +13,16 @@ pageextension 50100 "NTD BusinessManager RC Ext" extends "Business Manager Role 
                 RunObject = page "NTD Subscription List";
                 ApplicationArea = All;
             }
+            action("NTD SES TestPage")
+            {
+                Caption = 'SES Testpage';
+                Promoted = true;
+                PromotedIsBig = true;
+                Image = Report;
+                RunObject = page "SES_TestPage";
+                ApplicationArea = all;
+
+            }
         }
         addafter(Setup)
         {
@@ -38,6 +48,7 @@ pageextension 50100 "NTD BusinessManager RC Ext" extends "Business Manager Role 
                     RunObject = report "NTD Subscription Customers";
                     ApplicationArea = All;
                 }
+
             }
         }
     }
