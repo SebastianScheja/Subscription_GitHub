@@ -16,7 +16,7 @@ tableextension 50100 "NTD Customer Ext" extends Customer
             DataClassification = CustomerContent;
             Caption = 'Shoe Size';
         }
-        field(50209; "NTD Weight"; Decimal)
+        field(50209; "NTD SES Weight"; Decimal)
         {
             DataClassification = ToBeClassified;
             Caption = 'Weight';
